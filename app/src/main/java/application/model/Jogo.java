@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 @Table(name = "jogos")
 public class Jogo {
     
-    @Id @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String titulo;
@@ -46,11 +46,11 @@ public class Jogo {
         this.multiplayer = multiplayer;
     }
 
-    public Genero getGenro() {
+    public Genero getGenero() {
         return genero;
     }
 
-    public void setGenro(Genero genero) {
+    public void setGenero(Genero genero) {
         this.genero = genero;
     }
 }
